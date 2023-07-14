@@ -1,51 +1,91 @@
-<!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {
-  margin: 1;
-  font-family: Arial, Helvetica, sans-serif;
+*{
+  width: 100%;
+  overflow: auto;
+  background-color: white;
 }
 
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.topnav a {
+.logo {
+  width: 20%;
+  background-color: white;
   float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+  box-sizing: border-box;
+  padding: 30px;
 }
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+.banner {
+  width: 80%;
+  background-color: white;
+  float: right;
+  box-sizing: border-box;
+  padding: 30px;
 }
 
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
+#head-link {
+  background-color: white;
+  padding: 10px;
+}
+
+.content::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+#left, #content, #right {
+  width: 10%;
+  float: left;
+  box-sizing: border-box;
+  padding: 150px 30px;
+  background-color: white;
+}
+
+#content {
+  width: 80%;
+  background-color: #3EA99F;
+}
+
+#right {
+  background-color:white;
+}
+
+footer {
+  padding: 30px;
+  background-color: brown;
 }
 </style>
 </head>
+
 <body>
+<header>
+	<div id="head">
+		<img src="ueh.png" style="width:280px;height:100px>
+	</div>
+        <div id="head-link"></div>
+</header>
 
-<div class="topnav">
-  <a class="active" href="#home">Mathematic for Economist and Administration</a>
-  <a href="contact.html" title = "Contact"> Contact</a>
-  <a href="#about">About</a>
-</div>
+<section class="content">
+  <div id="left"></div>
+  <div id="content">
+	<h3 style = "color: #254117"> Đề cương chi tiết </h3>
+	<h3 style = "color: #254117"> Bài giảng </h3>
+	<ul>
+		<li> Đại số ma trận </li><br>
+		<li> Định thức</li><br>
+		<li> Ma trận nghịch đảo  </li><br>
+		<li> Hạng của ma trận </li><br>
+		<li> Hệ phương trình tuyến tính </li><br>
+		<li> Mô hình input - output </li><br>
+		<li> Giới hạnn hàm số, hàm số liên tục </li><br>
+		<li> Đạo hàm và vi phân </li><br>
+		<li> Cực trị và ứng dụng </li><br>
+	</ul>
+	<h3 style = "color: #254117"> Bài tập </h3>
+  </div>
+</section>
 
-<div style="padding-left:16px">
-  <h2>Top Navigation Example</h2>
-  <p>Some content..</p>
-</div>
 
-<h1> Math </h1>  
 </body>
 </html>
